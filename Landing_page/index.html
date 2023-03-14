@@ -19,13 +19,15 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1>
                 <a href="#home">LOGO</a>
             </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#top3">Top 3</a></li>
                     <li><a href="#trending">Trending</a></li>
@@ -42,14 +44,14 @@
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>2023 Upcoming Games Release Schedule</h2>
-                <p>2023 is shaping up to be an enormous year for video games, with many titles previously planned for
+                <p class="first-main-p">2023 is shaping up to be an enormous year for video games, with many titles previously planned for
                     this year getting pushed into next. Big-name games like The Legend of Zelda: Tears of the Kingdom
                     and Diablo IV are coming in 2023, as are several high-profile remakes of classic games.
                 </p>
             </div>
             <div class="intro-img">
                 <img src="assets/img/Console-control.svg"
-                    alt="Um desenho de homem e uma mulher construindo um controle de videogame gigante.">
+                    alt="A cartoon of a man and woman building a giant video game controller.">
             </div>
         </div>
     </section>
@@ -198,7 +200,7 @@
             </div>
             <div class="intro-img">
                 <img src="assets/img/contact.svg"
-                    alt="Um desenho de um homem organizando mensagens.">
+                    alt="A drawing of a woman deciding whether to text or call on her phone or smartphone.">
             </div>
             <div class="contact-form">
                 <fieldset class="form-grid">
@@ -228,8 +230,9 @@
     </section>
 
     <footer id="footer" class="footer white-bg">
-        <p><a rel="nofollow" target="_blank" href="https://github.com/TulioZY"> Feito com <span class="heart">♥</span> por Túlio Correia</a></p>
+        <p><a rel="nofollow" target="_blank" href="https://github.com/TulioZY"> Made with <span class="heart">♥</span> by Túlio Correia</a></p>
     </footer>
+    <a class="back-to-top" href="#intro">➤</a>
 
 </body>
 
